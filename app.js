@@ -15,13 +15,11 @@ const winningMesssageTextEl = document.querySelector("[data-winning-message-text
 const winningMesssageEl = document.getElementById("winning-message")
 const cellElement = document.querySelectorAll("[data-cell]")
 const board = document.querySelector("#board")
-const restartButton = document.getElementById("restart")
 
+const restartButton = document.getElementById("restart")
 restartButton.addEventListener("click", startGame)
 
 startGame()
-
-
 
 function startGame() {
     winningMesssageEl.classList.remove("show")
@@ -35,7 +33,6 @@ function startGame() {
     setBoardHoverClass()
     cell.removeEev
 }
-
 
 function handleClick(e) {
     const cell = e.target;
@@ -99,4 +96,3 @@ function addWinningtext() {
         winningMesssageTextEl.textContent = "X's Wins!!"
     }
 }
-

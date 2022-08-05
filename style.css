@@ -139,7 +139,6 @@ body {
     color: white;
     font-size: 5rem;
 }
-
 .winningmessage.show{
     display: flex;
 }
@@ -163,8 +162,9 @@ h2{
     opacity: 0;
 }
 
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 600px) {
+    /* media query for mobile phone */
     h1{
         width: 90%;
     }
